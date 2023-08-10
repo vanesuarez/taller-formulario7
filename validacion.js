@@ -1,5 +1,7 @@
 function showAlertSuccess() {
     document.getElementById("alert-success").classList.add("show");
+    // SE PUEDE HACER UNA FUNCION SETTIMEOUT PARA REINICIAR EL FORMULARIO
+
 }
 
 function showAlertError() {
@@ -20,10 +22,9 @@ boton.addEventListener('click', function(){
          apellido.value !== '' &&
          email.value !== '' &&
          password1.value !== '' &&
-         password2.value !== '' &&
          password1.value === password2.value &&
          password1.value.length >= 6 &&
-         terminos.checked == true
+         terminos.checked 
      ) 
      { 
          showAlertSuccess();
